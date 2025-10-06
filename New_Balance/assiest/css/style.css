@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top_header{
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.top_header img{
+    width: 5%;
+}
+.rev-row{
+    position: fixed;
+}
+.row{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.tac{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+}
+.nev_menu a{
+    text-decoration: none;
+    color: black;
+    padding-right: 40px;
+    font-size: 20px;
+}
+.nev_menu{
+    list-style: none;
+}
+.nev_1 img{
+    width: 20%;
+}
+.nev_2 input{
+    padding: 8px 15px;
+    background-color: rgb(189, 189, 189);
+    color: black;
+    border: none;
+    
+}
+.nev_2 span{
+    position: relative;
+    right: 150px;
+}
+.header{
+    background-image: url(../img/header_main_img.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 100px;
+}
+.header h2{
+    font-size: 50px;
+    padding: 98px 0 30px 40px;
+}
+.header button{
+    margin: 8px 0 98px 40px;
+    padding: 15px 40px;
+    background-color: rgb(211, 38, 38);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.header p{
+    padding: 8px 0 30px 40px;
+}
+.serch_icoun{
+    position: relative;
+    right:220px;
+    top: 1px;
+}
+.profile_icoun{
+    padding:  0 10px 0 0;
+}
+
+/* /.................................sec-1-start-here....................................../ */
+.Trending h2{
+    font-size: 30px;
+    padding: 50px 0 30px;
+    
+}
+.Trending button{
+    padding: 10px 40px;
+    
+}
+.cart img{
+    width: 90%;
+}
+.col_25{
+    width: 25%;
+}
+.cart{
+    padding: 50px 0;
+}
+/* /.................................sec-2-start-here....................................../ */
+.sec_2 img{
+    width: 100%;
+}
+.sec_2 h4{
+    font-size: 25px;
+    padding: 10px ;
+}
+.sec_2 p{
+    padding: 5px 0 5px 10px;
+    font-size: 17px;
+}
+.sec_2 button{
+    background-color: rgb(211, 38, 38) ;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px ;
+}
+/* /.................................sec-3-start-here....................................../ */
+.sec_3{
+    padding: 50px 0;
+}
+.col_25{
+    width: 25%;
+    
+}
+.sec_3 img{
+    width: 90%;
+}
+
+.sign_up{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    justify-content: center;
+    margin: 80px 0 50px 0;
+}
+.sign_up button{
+    border-radius: 5px;
+    border: none;
+    padding: 10px 40px;
+    background-color: rgb(211, 38, 38) ;
+    margin: 0 0 0 20px;
+}
+.sec_3_subheding{
+    padding: 50px 0 0 0;
+}
+/* /.................................footer-start-here....................................../ */
+.col_60{
+    width: 60%;
+}
+.col_60 h5{
+    padding: 10px 0;
+}
+.footer{
+    padding: 50px 30px 0;
+    align-items: center;
+}
+.footer li{
+    list-style: none;
+    padding: 10px 0 0;
+
+}
+.col_40{
+    width: 40%;
+}
+.col_40 img{
+    width: 20%;
+}
+.col_40 p{
+    width: 70%;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.footer_2{
+    padding: 30px 80px;
+}
