@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="box"></div>
+    <button id="next-btn">&#10094;</button>
+    <button id="prev-btn">&#10095;</button>
+
+    <script>
+      const food = [
+        {
+          imgUrl: "img1.avif",
+          title: "img1",
+          class: "img",
+        },
+        {
+          imgUrl: "img2.avif",
+          title: "img2",
+          class: "img",
+        },
+        {
+          imgUrl: "img3.avif",
+          title: "img3",
+          class: "img",
+        },
+        {
+          imgUrl: "img4.avif",
+          title: "img4",
+          class: "img",
+        },
+        {
+          imgUrl: "img5.avif",
+          title: "img5",
+          class: "img",
+        },
+        {
+          imgUrl: "img6.avif",
+          title: "img6",
+          class: "img",
+        },
+
+        {
+          imgUrl: "img7.avif",
+          title: "img7",
+          class: "img",
+        },
+        {
+          imgUrl: "img8.avif",
+          title: "img8",
+          class: "img",
+        },
+        {
+          imgUrl: "img9.avif",
+          title: "img9",
+          class: "img",
+        },
+        {
+          imgUrl: "img10.avif",
+          title: "img10",
+          class: "img",
+        },
+      ];
+
+      let box = document.getElementById("box");
+      food.forEach((element) => {
+        box.innerHTML += `
+        <img src="${element.imgUrl}" alt="" srcset="">`;
+      });
+    </script>
+  </body>
+</html>

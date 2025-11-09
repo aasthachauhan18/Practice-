@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page Clone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 40px auto;
+      gap: 30px;
+    }
+
+    /* Left side images */
+    .images {
+      flex: 1;
+    }
+    .images img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    /* Right side product info */
+    .details {
+      flex: 1;
+    }
+
+    .details h2 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    .details p.sub-title {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    /* Rating */
+    .rating {
+      background: #e8f5e9;
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    /* Price */
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .price span.mrp {
+      text-decoration: line-through;
+      color: #888;
+      margin-left: 8px;
+      font-weight: normal;
+      font-size: 16px;
+    }
+    .price span.off {
+      color: #ff3f6c;
+      margin-left: 8px;
+      font-size: 16px;
+    }
+    .tax {
+      font-size: 13px;
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    /* Thumbnails (more colors) */
+    .thumbs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .thumbs img {
+      width: 60px;
+      height: 60px;
+      border-radius: 4px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: border 0.2s;
+    }
+    .thumbs img.active {
+      border: 2px solid #ff3f6c;
+    }
+
+    /* Sizes */
+    .sizes h4 {
+      margin-bottom: 8px;
+    }
+    .size-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    .size-list li {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 16px;
+      background: #fff;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+    .size-list li:hover {
+      border-color: #ff3f6c;
+      color: #ff3f6c;
+    }
+    .size-list li.active {
+      border: 2px solid #ff3f6c;
+      color: #ff3f6c;
+    }
+    .size-list li small {
+      position: absolute;
+      bottom: -16px;
+      font-size: 11px;
+      color: #ff3f6c;
+    }
+    .size-list li.disabled {
+      background: #ffffff;
+      color: #999;
+      cursor: not-allowed;
+    }
+
+    /* Buttons */
+    .buttons {
+      display: flex;
+      gap: 15px;
+    }
+    .add-to-bag {
+      flex: 1;
+      background: #ff3f6c;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .wishlist {
+      flex: 1;
+      background: #fff;
+      color: #333;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Left side images -->
+  <div class="images">
+    <img id="mainImage" src="./main_shoes.jpg" alt="Main Shoe">
+  </div>
+
+  <!-- Right side details -->
+  <div class="details">
+    <h2>HRX by Hrithik Roshan</h2>
+    <p class="sub-title">Unisex Colourblocked Running Non-Marking Shoes</p>
+
+    <div class="rating">4.3 ★ | 568 Ratings</div>
+
+    <div class="price">
+      ₹969 <span class="mrp">₹2999</span> <span class="off">(67% OFF)</span>
+    </div>
+    <p class="tax">inclusive of all taxes</p>
+
+    <h4>MORE COLORS</h4>
+    <div class="thumbs">
+      <img class="active" src="./img1.jpg">
+      <img src="./img2.jpg">
+      <img src="./img3.jpg">
+    </div>
+
+    <div class="sizes">
+      <h4>SELECT SIZE (UK Size)</h4>
+      <ul class="size-list">
+        <li><span>3</span><small>1 left</small></li>
+        <li><span>4</span><small>1 left</small></li>
+        <li><span>5</span></li>
+        <li><span>6</span><small>1 left</small></li>
+        <li><span>7</span></li>
+        <li><span>8</span></li>
+        <li><span>9</span></li>
+        <li><span>10</span></li>
+        <li><span>11</span><small>4 left</small></li>
+      </ul>
+    </div>
+
+    <div class="buttons">
+      <button class="add-to-bag">ADD TO BAG</button>
+      <button class="wishlist">♡ WISHLIST</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // --- Thumbnail Click Functionality ---
+  const mainImage = document.getElementById("mainImage");
+  const thumbs = document.querySelectorAll(".thumbs img");
+
+  thumbs.forEach(thumb => {
+    thumb.addEventListener("click", () => {
+      // Change main image
+      mainImage.src = thumb.src;
+
+      // Active border highlight
+      thumbs.forEach(t => t.classList.remove("active"));
+      thumb.classList.add("active");
+    });
+  });
+
+  // --- Size Selection Functionality ---
+  const sizes = document.querySelectorAll(".size-list li");
+
+  sizes.forEach(size => {
+    size.addEventListener("click", () => {
+      if (size.classList.contains("disabled")) return; // skip disabled
+      sizes.forEach(s => s.classList.remove("active"));
+      size.classList.add("active");
+    });
+  });
+</script>
+
+</body>
+</html>
